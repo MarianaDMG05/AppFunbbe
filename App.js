@@ -5,21 +5,44 @@ import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-function HomeScreen(props) {
+function FunbbeScreen(props) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
+      <Text>Funbbe</Text>
       <Button 
-        title='Ir para Sobre'
-        onPress={() => props.navigation.navigate("Sobre")}
+        title='Conhecer Funbbe'
+        onPress={() => props.navigation.navigate("Funbbe")}
       />
     </View>
   );
 }
-function SobreScreen() {
+function ContatoScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Sobre Screen</Text>
+      <Text>FALE CONOSCO:</Text>
+      <Text>(14) 3641-2100</Text>
+      <Text>(14) 3641-9711</Text>
+      <Text>LOCALIZAÇÃO:</Text>
+      <Text>Rua João Gerin, Nº 275 – Vila Operária Barra Bonita | 17340-190 | São Paulo, Brasil.</Text>
+    </View>
+  );
+}
+function QuemsomosScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Nos somos a melhor escola!</Text>
+
+      <Text>A Escolas Integradas ”Prof. Nivaldo Salch Stipp” é mantida pela FunBBE (Fundação Barra Bonita de Ensino), e tem sua sede na cidade de Barra Bonita, no interior do estado de São Paulo.</Text>
+
+      <Text>Fundada em 1963, era conhecida como Colégio Comercial de Barra Bonita, não possuindo ainda uma estrutura bem definida. Somente em 1966 surge como personalidade jurídica, adequando-se à Lei 493 do ano em vigência, sancionada pelo então prefeito da época, Dr. Clodoaldo Antonângelo. Passa então a dispor sobre a criação da Fundação Barra Bonita de Ensino, ou como é popularmente conhecida, FunBBE, que passa a ser a instituição mantenedora do Colégio Comercial e dos demais cursos implementados por ela. 
+      </Text>
+    </View>
+  );
+}
+function EquipeScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Nossa equipe é repleta de profissionais capacitados.</Text>
     </View>
   );
 }
@@ -30,8 +53,10 @@ function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator>
-        <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="Sobre" component={SobreScreen} />
+        <Drawer.Screen name="Funbbe" component={FunbbeScreen} />
+        <Drawer.Screen name="Contato" component={ContatoScreen} />
+        <Drawer.Screen name="Quem somos" component={QuemsomosScreen} />
+        <Drawer.Screen name="Equipe" component={EquipeScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
