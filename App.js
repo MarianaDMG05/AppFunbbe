@@ -7,18 +7,20 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 function FunbbeScreen(props) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Funbbe</Text>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start', backgroundColorcolor: "#212275" }}>
+      <Text>FunBBe</Text>
       <Button 
-        title='Conhecer Funbbe'
+        title='Fundação Barra Bonita de Ensino'
         onPress={() => props.navigation.navigate("Funbbe")}
+        
+         
       />
     </View>
   );
 }
 function ContatoScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'flex-start' ,backgroundColor:"#b2ddeb" }}>
       <Text>FALE CONOSCO:</Text>
       <Text>(14) 3641-2100</Text>
       <Text>(14) 3641-9711</Text>
@@ -29,7 +31,7 @@ function ContatoScreen() {
 }
 function QuemsomosScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start', color:"rgb(29, 68 , 209)"}}>
       <Text>Nos somos a melhor escola!</Text>
 
       <Text>A Escolas Integradas ”Prof. Nivaldo Salch Stipp” é mantida pela FunBBE (Fundação Barra Bonita de Ensino), e tem sua sede na cidade de Barra Bonita, no interior do estado de São Paulo.</Text>
@@ -41,8 +43,8 @@ function QuemsomosScreen() {
 }
 function EquipeScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Nossa equipe é repleta de profissionais capacitados.</Text>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor:"#ff0303", fontsize: 4 }}>
+      <Text>Nossa equipe é repleta de FERAS!!!</Text>
     </View>
   );
 }
